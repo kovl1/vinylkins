@@ -393,26 +393,24 @@ body {
     .block-3 {
         padding: 40px 0;
     }
-    .block-3__container {
-        gap: 35px;
-    }
     .block-3__item {
         width: calc(50% - 50px);
     }
     .block-3__title {
-        font-size: 2.5vw;
+        font-size: 3.8vw;
+        font-weight: 600;
         margin-bottom: 40px;
     }
-    .block-3__image {
-        padding: 15px 15px 0;
-    }
     .block-3__name {
-        font-size: 1.2vw;
+        font-size: 2.5vw;
         margin: 20px 15px 10px;
     }
     .block-3__price {
-        font-size: 1.5vw;
+        font-size: 3.2vw;
         margin: 0 15px 15px;
+    }
+    .block-3__buttons {
+        font-size: 2vw;
     }
     .block-3__btn {
         border-top: 1.5px solid black;
