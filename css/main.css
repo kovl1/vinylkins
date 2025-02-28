@@ -317,7 +317,7 @@ body {
 }
 
 .mini-block__container {
-    max-width: 960px;
+    max-width: 50vw;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -327,7 +327,7 @@ body {
 }
 
 .mini-block__text {
-    font-size: 18px;
+    font-size: 0.9vw;
     color: black;
     margin: 0;
     flex: 1;
@@ -340,7 +340,7 @@ body {
     background-color: white;
     border: 2px solid white;
     padding: 20px 35px;
-    font-size: 16px;
+    font-size: 0.8vw;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -392,6 +392,10 @@ body {
     .block-4__btn {
         padding: 15px 90px;
     }
+    .mini-block__container {
+        max-width: 55vw;
+        gap: 60px;
+        }
 }
 
 @media (max-width: 1024px){
@@ -455,6 +459,20 @@ body {
     }
     .block-4__btn {
         padding: 10px 60px;
+    }
+    .mini-block {
+        padding: 15px 0;
+    }
+    .mini-block__container {
+        max-width: 65vw;
+        gap: 60px;
+    }
+    .mini-block__text {
+        font-size: 1.1vw;
+    }
+    .mini-block__btn {
+        padding: 15px 30px;
+        font-size: 1vw;
     }
 }
 
@@ -557,6 +575,18 @@ body {
     .block-4__btn {
         font-size: 3.4vw;
         padding: 14px 65px;
+    }       
+    .mini-block__container {
+        max-width: 80vw;
+        padding: 0 20px;
+        gap: 30px;
+    }
+    .mini-block__text {
+        font-size: 2.5vw;
+    }
+    .mini-block__btn {
+        padding: 15px 30px;
+        font-size: 2vw;
     }
 }
 
@@ -656,5 +686,20 @@ body {
     .block-4__btn {
         font-size: 3.4vw;
         padding: 10px 34px;
+    }
+    .mini-block {
+        padding: 15px 0;
+    }
+    .mini-block__container {
+        max-width: 84vw;
+        padding: 0 20px;
+        gap: 30px;
+    }
+    .mini-block__text {
+        font-size: 2.7vw;
+    }
+    .mini-block__btn {
+        padding: 10px 20px;
+        font-size: 2.5vw;
     }
 }
