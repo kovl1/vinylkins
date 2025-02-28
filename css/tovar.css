@@ -45,15 +45,81 @@ body {
 
 
 
+.mini-block {
+    background-color: #58BA8C;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.mini-block__container {
+    max-width: 50vw;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.mini-block__text {
+    font-size: 0.9vw;
+    color: black;
+    margin: 0;
+    flex: 1;
+    text-align: left;
+}
+
+.mini-block__btn {
+    font-family: 'Hammersmith One', sans-serif;
+    color: black;
+    background-color: white;
+    border: 2px solid white;
+    padding: 20px 35px;
+    font-size: 0.8vw;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;  
+}
+
+.mini-block__btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-color: rgb(0, 0, 0);
+}
+
+
+
+
+
 @media (max-width: 1512px){
     .header__logo {
         width: 70px;
     }
+    .mini-block__container {
+        max-width: 55vw;
+        gap: 60px;
+        }
 }
 
 @media (max-width: 1024px){
     .header__logo {
         width: 50px;
+    }
+    .mini-block {
+        padding: 15px 0;
+    }
+    .mini-block__container {
+        max-width: 65vw;
+        gap: 60px;
+    }
+    .mini-block__text {
+        font-size: 1.1vw;
+    }
+    .mini-block__btn {
+        padding: 15px 30px;
+        font-size: 1vw;
     }
 }
 
@@ -64,10 +130,37 @@ body {
     .header__nav a {
         font-size: 2vw;
     }
+    .mini-block__container {
+        max-width: 80vw;
+        padding: 0 20px;
+        gap: 30px;
+    }
+    .mini-block__text {
+        font-size: 2.5vw;
+    }
+    .mini-block__btn {
+        padding: 15px 30px;
+        font-size: 2vw;
+    }
 }
 
 @media (max-width: 320px){
     .header__logo {
         width: 30px;
+    }
+    .mini-block {
+        padding: 15px 0;
+    }
+    .mini-block__container {
+        max-width: 84vw;
+        padding: 0 20px;
+        gap: 30px;
+    }
+    .mini-block__text {
+        font-size: 2.7vw;
+    }
+    .mini-block__btn {
+        padding: 10px 20px;
+        font-size: 2.5vw;
     }
 }
