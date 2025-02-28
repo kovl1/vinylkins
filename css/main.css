@@ -207,6 +207,7 @@ body {
     font-size: 1.2vw;
     margin: 30px 25px 20px;
     font-weight: normal;
+    line-height: 1.6;
 }
 
 .block-3__price {
@@ -258,6 +259,58 @@ body {
 
 
 
+.block-4 {
+    background-color: white;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.block-4__container {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-4__title {
+    font-family: 'Inter', sans-serif;
+    font-size: 3vw;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.block-4__text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4vw;
+    max-width: 720px;
+    margin: 0 auto 70px;
+    line-height: 1.6;
+}
+
+.block-4__btn {
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: rgb(243, 86, 56);
+    color: white;
+    border: 2px solid rgb(243, 86, 56);
+    padding: 15px 90px;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.block-4__btn:hover {
+    background-color: rgb(36, 49, 102);
+    border-color: rgb(36, 49, 102);
+}
+
+
+
+
+
 @media (max-width: 1512px){
     .header__logo {
         width: 70px;
@@ -285,6 +338,26 @@ body {
     }
     .block-3__btn {
         padding: 15px 20px;
+    }
+    .block-4 {
+        padding: 70px 0;
+    }
+    .block-4__container {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .block-4__title {
+        font-size: 3vw;
+        margin-bottom: 50px;
+    }
+    .block-4__text {
+        font-size: 1.4vw;
+        max-width: 720px;
+        margin: 0 auto 70px;
+    }
+    .block-4__btn {
+        padding: 15px 90px;
+        font-size: 1.2vw;
     }
 }
 
