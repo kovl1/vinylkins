@@ -358,6 +358,127 @@ body {
 
 
 
+.footer {
+    background-color: #262626;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer__container {
+    max-width: 1550px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.footer__left {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 100%;
+    padding-left: 180px;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__logo-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer__copyright {
+    font-size: 0.65vw;
+    margin: 0;
+    max-width: 150px;
+    word-wrap: break-word;
+}
+
+.footer__text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 420px;
+    margin-left: 120px;
+}
+
+.footer__description-text,
+.footer__offline-text {
+    font-size: 0.7vw;
+    margin: 0;
+    line-height: 1.6;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    max-width: 70%;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.footer__offline-text {
+    margin-top: 45px;
+}
+
+.footer__right {
+    flex: 1;
+    display: flex;
+    gap: 100px;
+}
+
+.footer__column {
+    flex: 1;
+    max-width: 200px;
+}
+
+.footer__column-title {
+    font-size: 0.8vw;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.footer__line--buyers {
+    border: 1px solid white;
+    width: 6.3vw;
+    margin: 5px 0 20px;
+}
+
+.footer__line--company {
+    border: 1px solid white;
+    width: 5.7vw;
+    margin: 5px 0 20px;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__link {
+    font-size: 0.8vw;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: rgb(243, 86, 56);
+}
+
+
+
+
+
 @media (max-width: 1512px){
     .header__logo {
         width: 70px;
@@ -395,7 +516,39 @@ body {
     .mini-block__container {
         max-width: 55vw;
         gap: 60px;
-        }
+    }
+    .footer__container {
+        max-width: 1350px;
+    }     
+    .footer__logo-img {
+        width: 120px;
+    }
+    .footer__text {
+        width: 420px;
+        margin-left: 30px;
+    }
+    .footer__description-text,
+    .footer__offline-text {
+        font-size: 0.8vw;
+    }  
+    .footer__right {
+        gap: 50px;
+    }
+    .footer__column-title {
+        font-size: 0.9vw;
+    }
+    .footer__line--buyers {
+        width: 7vw;
+        margin: 5px 0 18px;
+    }
+    .footer__line--company {
+        width: 5.7vw;
+        margin: 5px 0 18px;
+    }
+    .footer__link {
+        font-size: 0.8vw;
+        margin-bottom: 18px;
+    }
 }
 
 @media (max-width: 1024px){
@@ -473,6 +626,30 @@ body {
     .mini-block__btn {
         padding: 15px 30px;
         font-size: 1vw;
+    }
+    .footer__container {
+        max-width: 850px;
+    }     
+    .footer__logo-img {
+        width: 120px;
+    }
+    .footer__copyright {
+        font-size: 0.9vw;
+    }
+    .footer__left {
+        padding-left: 0px;
+    }
+    .footer__text {
+        width: 380px;
+        margin-left: 30px;
+    }
+    .footer__description-text,
+    .footer__offline-text {
+        font-size: 1vw;
+    } 
+    .footer__line--company {
+        width: 6.2vw;
+        margin: 5px 0 18px;
     }
 }
 
@@ -588,6 +765,34 @@ body {
         padding: 15px 30px;
         font-size: 2vw;
     }
+    .footer__text {
+        display: none;
+    }
+    .footer__container {
+        max-width: 550px;
+    }     
+    .footer__logo-img {
+        width: 120px;
+    }
+    .footer__copyright {
+        font-size: 1.8vw;
+    }
+    .footer__left {
+        max-width: 140px;
+    }
+    .footer__column-title {
+        font-size: 2.8vw;
+    }
+    .footer__line--company {
+        width: 20vw;
+        margin: 5px 0 18px;
+    }
+    .footer__line--buyers {
+        width: 22vw;
+    }
+    .footer__link {
+        font-size: 2.4vw;
+    }
 }
 
 @media (max-width: 320px){
@@ -701,5 +906,35 @@ body {
     .mini-block__btn {
         padding: 10px 20px;
         font-size: 2.5vw;
+    }
+    .footer__container {
+        max-width: 40px;
+    }     
+    .footer__logo-img {
+        width: 70px;
+        margin-bottom: 5px;
+    }
+    .footer__copyright {
+        font-size: 1.8vw;
+    }
+    .footer__left {
+        max-width: 20px;
+    }
+    .footer__right {
+        max-width: 0px;
+        padding-right: 180px;
+    }
+    .footer__column-title {
+        font-size: 2.4vw;
+    }
+    .footer__line--company {
+        width: 20vw;
+        margin: 5px 0 18px;
+    }
+    .footer__line--buyers {
+        width: 22vw;
+    }
+    .footer__link {
+        font-size: 2vw;
     }
 }
