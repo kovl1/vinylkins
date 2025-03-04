@@ -45,6 +45,25 @@ body {
 
 
 
+.catalog-vinyl {
+    width: 100%;
+    text-align: center;
+}
+
+.catalog-vinyl__image {
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+
+
+
+
 .block-3 {
     padding: 50px 0;
     text-align: center;
@@ -312,6 +331,9 @@ body {
     .header__logo {
         width: 70px;
     }
+    .catalog-vinyl__image {
+        height: 88vh;
+    }
     .block-3__container {
         max-width: 1400px;
     }
@@ -374,6 +396,9 @@ body {
 @media (max-width: 1024px){
     .header__logo {
         width: 50px;
+    }
+    .catalog-vinyl__image {
+        height: 88vh;
     }
     .block-3 {
         padding: 40px 0;
