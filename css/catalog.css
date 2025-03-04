@@ -397,9 +397,6 @@ body {
     .header__logo {
         width: 50px;
     }
-    .catalog-vinyl__image {
-        height: 88vh;
-    }
     .block-3 {
         padding: 40px 0;
     }
@@ -482,6 +479,9 @@ body {
     }
     .header__nav a {
         font-size: 2vw;
+    }
+    .catalog-vinyl__image {
+        height: 92vh;
     }
     .block-3 {
         padding: 40px 0;
