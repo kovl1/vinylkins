@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Inter:wght@100..900&family=Halant:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Heebo:wght@400;700&family=Inter:wght@100..900&family=Halant:wght@300..700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="css/catalog.css">
     <title>Винилкинс - Каталог</title>
 </head>
 <body>
-    <header class="header">
+    <div class="header">
         <nav class="header__nav">
             <div class="">
                 <a href="index.html"><img src="img/logo2.png" alt="Винилкинс" class="header__logo"></a>
@@ -20,14 +20,89 @@
             <div class=""><a href="catalog.html">СКИДКИ</a></div>
             <div class=""><a href="#">СЕРТИФИКАТ</a></div>
         </nav>
-    </header>
+    </div>
 
-    <section class="catalog-vinyl">
+    <div class="catalog-vinyl">
         <img src="img/catalogVinyl.png" alt="Каталог винила" class="catalog-vinyl__image">
-    </section>
+    </div>
 
-    <section class="block-3">
-        <h2 class="block-3__title"></h2>
+    <div class="filters-block">
+        <div class="filters-container">
+            <div class="filters-left">
+                <!-- Жанр -->
+                <div class="dropdown-trigger" id="genreTrigger">ЖАНР</div>
+                <div class="dropdown-menu" id="genreDropdown">
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="alternativeCheckbox" name="genre" value="alternative">
+                        <label for="alternativeCheckbox">Alternative</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="christmasCheckbox" name="genre" value="christmas">
+                        <label for="christmasCheckbox">Christmas</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="compilationsCheckbox" name="genre" value="compilations">
+                        <label for="compilationsCheckbox">Compilations</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="electronicCheckbox" name="genre" value="electronic">
+                        <label for="electronicCheckbox">Electronic</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="hipHopCheckbox" name="genre" value="hip-hop">
+                        <label for="hipHopCheckbox">Hip-Hop</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="indiePopCheckbox" name="genre" value="indie-pop">
+                        <label for="indiePopCheckbox">Indie Pop</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="indieRockCheckbox" name="genre" value="indie-rock">
+                        <label for="indieRockCheckbox">Indie Rock</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="popCheckbox" name="genre" value="pop">
+                        <label for="popCheckbox">Pop</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="rnbSoulCheckbox" name="genre" value="rnb-soul">
+                        <label for="rnbSoulCheckbox">R&B/Soul</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="retroCheckbox" name="genre" value="retro">
+                        <label for="retroCheckbox">Retro</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="russianCheckbox" name="genre" value="russian">
+                        <label for="russianCheckbox">Russian</label>
+                    </div>
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="soundtrackCheckbox" name="genre" value="soundtrack">
+                        <label for="soundtrackCheckbox">Soundtrack</label>
+                    </div>
+                </div>
+                <!-- Наличие -->
+                <div class="dropdown-trigger" id="availabilityTrigger">НАЛИЧИЕ</div>
+                <div class="dropdown-menu" id="availabilityDropdown">
+                    <div class="dropdown-item">
+                        <input type="checkbox" id="inStockCheckbox" name="availability" value="in-stock">
+                        <label for="inStockCheckbox">Только товары в наличии</label>
+                    </div>
+                </div>
+            </div>
+            <div class="filters-right">
+                <div class="search-bar">
+                    <span class="search-bar-line"></span>
+                    <input type="text" class="search-input" placeholder="Поиск">
+                    <img src="img/lupa.png" alt="Поиск" class="search-icon">
+                </div>
+            </div>
+        </div>
+        <div class="badge-container"></div> <!-- Контейнер для бейджа "Только товары в наличии" (пока скрыт) -->
+        <div class="found-count">Найдено: 8</div>
+    </div>
+
+    <div class="block-3">
         <div class="block-3__container">
             <div class="block-3__item">
                 <img src="img/newcatalog/Lanadel.png" alt="Lana Del Rey – Born To Die" class="block-3__image">
@@ -102,14 +177,14 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="mini-block">
+    <div class="mini-block">
         <div class="mini-block__container">
             <p class="mini-block__text">Не нашли любимую пластинку в нашем каталоге? Напишите нам сейчас и мы обязательно её привезём :)</p>
             <a href="#" class="mini-block__btn">НАПИСАТЬ НАМ</a>
         </div>
-    </section>
+    </div>
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__left">
@@ -152,5 +227,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
