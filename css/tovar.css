@@ -333,6 +333,40 @@ body {
     .header__logo {
         width: 50px;
     }
+    .product-block {
+        padding: 7vh 0;
+    }
+    .product-block__container {
+        margin: 0 4vw;
+        gap: 40px;
+    }
+    .product-block__title {
+        font-size: 2.5vw;
+        margin-bottom: 10px;
+    }
+    .product-block__article {
+        font-size: 0.6vw;
+        margin-bottom: 20px;
+    }
+    .product-block__price {
+        font-size: 2.5vw;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .product-block__description {
+        font-size: 0.8vw;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+    .product-block__tracklist {
+        font-size: 1vw;
+        line-height: 1.4;
+    }
+    .product-block__btn {
+        padding: 12px 40px;
+        font-size: 1.3vw;
+        margin-bottom: 20px;
+    }
     .mini-block {
         padding: 15px 0;
     }
@@ -380,6 +414,55 @@ body {
     .header__nav a {
         font-size: 2vw;
     }
+    .product-block {
+        padding: 4vh 0;
+    }
+    .product-block__container {
+        flex-direction: column;
+        margin: 0 1vw;
+        padding: 0 20px;
+        gap: 20px;
+    }
+    .product-block__image {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 100%;
+    }
+    .product-block__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+    }
+    .product-block__title {
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+    .product-block__article {
+        font-size: 2vw;
+        margin-bottom: 10px;
+    }
+    .product-block__price {
+        font-size: 6vw;
+        margin-bottom: 10px;
+    }
+    .product-block__btn {
+        font-size: 3vw;
+        padding: 15px 35px;
+        margin-bottom: 20px;
+    }
+    .product-block__description {
+        font-size: 1.8vw;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .product-block__tracklist {
+        font-size: 2.5vw;
+        line-height: 1.5;
+    }
     .mini-block__container {
         max-width: 80vw;
         padding: 0 20px;
@@ -426,6 +509,39 @@ body {
     .header__logo {
         width: 30px;
     }
+    .product-block {
+        padding: 3.5vh 0;
+    }
+    .product-block__container {
+        margin: 0 0vw;
+        padding: 0 15px;
+        gap: 15px;
+    }
+    .product-block__title {
+        font-size: 5.5vw;
+        margin-bottom: 5px;
+    }
+    .product-block__article {
+        font-size: 2.3vw;
+    }
+    .product-block__price {
+        font-size: 7vw;
+        margin-bottom: 10px;
+    }
+    .product-block__btn {
+        font-size: 4vw;
+        padding: 14px 35px;
+        margin-bottom: 10px;
+    }
+    .product-block__description {
+        font-size: 2.3vw;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+    .product-block__tracklist {
+        font-size: 3vw;
+        line-height: 1.5;
+    }
     .mini-block {
         padding: 15px 0;
     }
@@ -441,8 +557,8 @@ body {
         padding: 10px 20px;
         font-size: 2.5vw;
     }
-    .footer__container {
-        max-width: 40px;
+    .footer {
+        padding: 20px 0  5px;
     }
     .footer__logo-img {
         width: 70px;
@@ -456,17 +572,17 @@ body {
     }
     .footer__right {
         max-width: 0px;
-        padding-right: 180px;
+        padding-right: 160px;
     }
     .footer__column-title {
         font-size: 2.4vw;
     }
     .footer__line--company {
-        width: 20vw;
+        width: 17vw;
         margin: 5px 0 18px;
     }
     .footer__line--buyers {
-        width: 22vw;
+        width: 18.5vw;
     }
     .footer__link {
         font-size: 2vw;
