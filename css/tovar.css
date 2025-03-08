@@ -70,7 +70,7 @@ body {
 .product-block__title {
     font-family: 'Halant';
     font-size: 2vw;
-    font-weight: 550;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
@@ -89,13 +89,15 @@ body {
 }
 
 .product-block__description {
-    font-size: 0.9vw;
+    font-family: 'Hammersmith One';
+    font-size: 0.64vw;
     margin-bottom: 20px;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 .product-block__tracklist {
-    font-size: 0.9vw;
+    font-family: 'Hannari';
+    font-size: 1.1vw;
     line-height: 1.5;
 }
 
@@ -104,14 +106,14 @@ body {
     color: white;
     background-color: #F35638;
     border: 2px solid #F35638;
-    padding: 20px 40px;
+    padding: 17px 40px;
     font-size: 1vw;
-    font-weight: 700;
+    font-weight: 400;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-radius: 10px;
 }
 
