@@ -63,15 +63,170 @@ body {
 
 
 
+/* Блок с фильтрами, поиском и количеством найденных товаров */
+.filters-block {
+    padding: 20px 0;
+}
+
+.filters-container {
+    max-width: 1700px; /* Как у .block-3__container */
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Горизонтальное выравнивание */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Отступ между фильтрами и поиском */
+}
+
+.filters-left {
+    display: flex;
+    gap: 20px; /* Отступ между ЖАНР и НАЛИЧИЕ */
+    align-items: center;
+    padding-left: 25px; /* Отступ как у .block-3__item (padding-left: 25px) */
+}
+
+.filters-right {
+    display: flex;
+    align-items: center;
+    padding-right: 25px; /* Отступ как у .block-3__item (padding-right: 25px) */
+}
+
+.dropdown-trigger {
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.dropdown-trigger:hover {
+    color: rgb(243, 86, 56); /* Оранжевый цвет при наведении, как в футере */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; /* Смещение для выравнивания с началом триггера */
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 8px 0;
+    list-style: none;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 8px 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item:hover {
+    background-color: #F9F9F9;
+}
+
+.dropdown-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-line {
+    position: absolute;
+    left: calc(100% - 40px); /* Позиция левее иконки лупы */
+    width: 2px; /* Толщина палочки */
+    height: 100%; /* Палочка теперь касается верхней и нижней краёв поисковой строки */
+    background-color: black; /* Чёрная палочка по умолчанию */
+    pointer-events: none; /* Отключаем взаимодействие с палочкой */
+    transition: background-color 0.3s ease; /* Анимация изменения цвета */
+}
+
+.search-input {
+    font-family: 'Inter', sans-serif;
+    padding: 6px 30px 6px 15px; /* Уменьшена высота строки */
+    font-size: 16px;
+    border: 2px solid black; /* Чёрная рамка, как на скриншоте */
+    border-radius: 25px; /* Закруглённые углы, как на скриншоте */
+    width: 250px;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: rgb(243, 86, 56);
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #000; /* Чёрный текст плейсхолдера */
+    opacity: 1; /* Полная видимость плейсхолдера */
+    transition: opacity 0.3s ease; /* Анимация исчезновения плейсхолдера */
+}
+
+.search-input:focus::placeholder {
+    opacity: 0; /* Плейсхолдер исчезает при фокусе */
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px; /* Позиция иконки лупы справа */
+    width: 20px; /* Размер иконки */
+    height: auto;
+    pointer-events: none; /* Отключаем взаимодействие с иконкой */
+}
+
+.badge-container {
+    padding-left: 25px; /* Выравнивание по левой стороне первой карточки */
+    display: none; /* Пока скрываем, добавим в JS позже */
+}
+
+.found-count {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: black;
+    padding-left: 25px; /* Явный отступ 25px слева, как у первой карточки */
+    margin-left: 0; /* Убираем возможные дополнительные отступы */
+    margin-top: 10px; /* Отступ сверху для новой строки */
+    visibility: visible; /* Убедимся, что всегда видим */
+}
+
+/* Стили для бейджа "Только товары в наличии" */
+.badge {
+    font-family: 'Inter', sans-serif;
+    background-color: #D3D3D3;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer; /* Делаем бейдж кликабельным (для будущего JS) */
+}
+
+
+
+
 
 .block-3 {
     padding: 50px 0;
     text-align: center;
-}
-
-.block-3__title {
-    font-size: 2.4vw;
-    margin-bottom: 50px;
 }
 
 .block-3__container {
@@ -403,10 +558,6 @@ body {
     .block-3__container {
         gap: 35px;
     }
-    .block-3__title {
-        font-size: 2.5vw;
-        margin-bottom: 40px;
-    }
     .block-3__image {
         padding: 15px 15px 0;
     }
@@ -488,11 +639,6 @@ body {
     }
     .block-3__item {
         width: calc(50% - 50px);
-    }
-    .block-3__title {
-        font-size: 3.8vw;
-        font-weight: 600;
-        margin-bottom: 40px;
     }
     .block-3__name {
         font-size: 2.5vw;
@@ -576,11 +722,6 @@ body {
         width: calc(50% - 40px);
         border: 1px solid black;
     }
-    .block-3__title {
-        font-size: 4.4vw;
-        font-weight: 400;
-        margin-bottom: 30px;
-    }
     .block-3__name {
         font-size: 2.8vw;
         margin: 10px 5px 5px;
@@ -601,13 +742,7 @@ body {
         border: 1px solid rgb(243, 86, 56);
         padding: 8px 20px;
     }
-}
-
-@media (max-width: 320px){
-    .header__logo {
-        width: 30px;
-    }
-    .mini-block {
+        .mini-block {
         padding: 15px 0;
     }
     .mini-block__container {
